@@ -1,13 +1,34 @@
-
+@mixin hr {
+  width: 75px;
+  margin: 0.5rem 0;
+  border-top: 3px solid #ffffff;
+  box-shadow: 2px 2px 4px 1px rgba(0,0,0,.1);
+}
+@mixin hr-hover {
+  border-top: 3px solid #3BAAFE;
+}
+@mixin h2{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: bold;
+}
+@mixin h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: bold;
+}
 
 * {
-  //margin: 0;
-  //padding: 0 !important;
   font-size: 10px;
-  //color: #202020;
 }
 
 nav.navbar.navbar-dark.bg-dark {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
   .navbar-brand {
     margin-right: 70px !important;
   }
@@ -17,6 +38,11 @@ nav.navbar.navbar-dark.bg-dark {
       li.nav-item {
         a.nav-link {
           font-size: 1.4rem;
+        }
+        &.active {
+          a.nav-link {
+            border-bottom: 2px solid #3BAAFE;
+          }
         }
       }
     }
@@ -67,8 +93,8 @@ header.container-fluid {
   h1 {
     position: absolute;
     top: 150px;
-    right: 150px;
-    width: 450px;
+    right: 60px;
+    width: 400px;
     color: #ccc;
     text-align: right;
     font-size: 4rem;
@@ -76,6 +102,14 @@ header.container-fluid {
 }
 
 main {
+  p {
+    font-size: 1.4rem;
+    color: #999999;
+  }
+  .bg-light {
+    background-color: #f0f0f0 !important;
+  }
+
   section.container-fluid {
     padding: 120px 0 85px;
     background-color: #fff;
@@ -83,23 +117,15 @@ main {
       margin: auto;
       article {
         position: relative;
-        background-color: #f5f5f5;
         padding: 55px 30px  25px;
         header {
           margin-bottom: 20px;
           width: auto;
-          h2 {
-            text-transform: uppercase;
-            color: #555555;
-            font-size: 1.8rem;
-            font-weight: bold;
+          h3 {
+            @include h3;
           }
           hr {
-            display: inline-block;
-            width: 25%;
-            margin: 0.5rem 0;
-            text-align: right;
-            border-top: 2px solid rgba(0,0,0,.1);;
+            @include hr;
           }
         }
         .icon {
@@ -120,10 +146,63 @@ main {
 
           }
         }
+        &:hover {
+          header {
+            hr {
+              @include hr-hover;
+            }
+          }
+          .icon {
+            background-color: #3BAAFE;
+          }
+        }
+      }
+    }
+
+    &#why_us {
+      article {
+        padding: 60px 40px;
+        header {
+          margin-bottom: 40px;
+          h2 {
+            font-size: 2.4rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-shadow: 1px 1px rgba(0,0,0,.1);
+          }
+          hr {
+            @include hr
+          }
+        }
         .body {
-          p {
-            font-size: 1.4rem;
-            color: #999999;
+          .row {
+            margin: 45px 0 0;
+
+            .row {
+              margin: 0 0 30px;
+              &:nth-child(odd) {
+                margin-left: -15px;
+                margin-right: 15px;
+              }
+              .icon {
+                background-color: #fff;
+                width: 100%;
+                height: auto;
+                padding: 15px;
+                img {
+                  width: 100%;
+                }
+              }
+              h3 {
+                @include h3;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+        &:hover {
+          hr {
+            @include hr-hover;
           }
         }
       }
