@@ -110,6 +110,7 @@ main {
     background-color: #f0f0f0 !important;
   }
 
+
   section.container-fluid {
     padding: 120px 0 85px;
     background-color: #fff;
@@ -141,9 +142,8 @@ main {
           left: 26px;
           text-align: center;
           img {
-            //width: 28px;
+        //    //width: 28px;
             height: 28px;
-
           }
         }
         &:hover {
@@ -205,6 +205,74 @@ main {
             @include hr-hover;
           }
         }
+      }
+    }
+
+    &#what_we_do {
+      padding: 75px 0;
+      .container {
+        header {
+          margin-bottom: 75px;
+          h2 {
+            @include h2;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+          hr {
+            @include hr;
+            margin: auto;
+          }
+        }
+
+        .body.row {
+          article {
+            margin-bottom: 30px;
+            header {
+              margin-bottom: 10px;
+              .icon {
+                display: inline-block;
+                background-color: #555555;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 15px;
+                padding: 12px;
+                img {
+                  width: 100%;
+                }
+              }
+              h3 {
+                @include h3;
+                display: inline-block;
+              }
+            }
+
+            &:hover {
+              header {
+                .icon {
+                  background-color: #3BAAFE;
+                }
+                h3 {
+                  color: #000000;
+                }
+
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .container {
+          header {
+            h2 {
+              color: #3BAAFE;
+            }
+            hr {
+              @include hr-hover;
+            }
+          }
+        }
+
       }
     }
   }

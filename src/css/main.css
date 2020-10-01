@@ -140,6 +140,52 @@ main section.container-fluid {
           margin-bottom: 10px; }
     main section.container-fluid#why_us article:hover hr {
       border-top: 3px solid #3BAAFE; }
+  main section.container-fluid#what_we_do {
+    padding: 75px 0; }
+    main section.container-fluid#what_we_do .container header {
+      margin-bottom: 75px; }
+      main section.container-fluid#what_we_do .container header h2 {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: #555555;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center; }
+      main section.container-fluid#what_we_do .container header hr {
+        width: 75px;
+        margin: 0.5rem 0;
+        border-top: 3px solid #ffffff;
+        -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+        margin: auto; }
+    main section.container-fluid#what_we_do .container .body.row article {
+      margin-bottom: 30px; }
+      main section.container-fluid#what_we_do .container .body.row article header {
+        margin-bottom: 10px; }
+        main section.container-fluid#what_we_do .container .body.row article header .icon {
+          display: inline-block;
+          background-color: #555555;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          margin-right: 15px;
+          padding: 12px; }
+          main section.container-fluid#what_we_do .container .body.row article header .icon img {
+            width: 100%; }
+        main section.container-fluid#what_we_do .container .body.row article header h3 {
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          color: #555555;
+          font-weight: bold;
+          display: inline-block; }
+      main section.container-fluid#what_we_do .container .body.row article:hover header .icon {
+        background-color: #3BAAFE; }
+      main section.container-fluid#what_we_do .container .body.row article:hover header h3 {
+        color: #000000; }
+    main section.container-fluid#what_we_do:hover .container header h2 {
+      color: #3BAAFE; }
+    main section.container-fluid#what_we_do:hover .container header hr {
+      border-top: 3px solid #3BAAFE; }
 
 footer.container-fluid {
   background-color: #202020;
