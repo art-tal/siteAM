@@ -1,3 +1,22 @@
+hr {
+  width: 75px;
+  margin: 0.5rem 0;
+  border-top: 3px solid #ffffff;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1); }
+
+h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: bold; }
+
 * {
   font-size: 10px; }
 
@@ -73,17 +92,6 @@ main section.container-fluid {
       main section.container-fluid .container.row article header {
         margin-bottom: 20px;
         width: auto; }
-        main section.container-fluid .container.row article header h3 {
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          color: #555555;
-          font-weight: bold; }
-        main section.container-fluid .container.row article header hr {
-          width: 75px;
-          margin: 0.5rem 0;
-          border-top: 3px solid #ffffff;
-          -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1); }
       main section.container-fluid .container.row article .icon {
         width: 70px;
         height: 70px;
@@ -112,12 +120,6 @@ main section.container-fluid {
         color: #ffffff;
         text-transform: uppercase;
         text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
-      main section.container-fluid#why_us article header hr {
-        width: 75px;
-        margin: 0.5rem 0;
-        border-top: 3px solid #ffffff;
-        -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1); }
     main section.container-fluid#why_us article .body .row {
       margin: 45px 0 0; }
       main section.container-fluid#why_us article .body .row .row {
@@ -133,10 +135,6 @@ main section.container-fluid {
           main section.container-fluid#why_us article .body .row .row .icon img {
             width: 100%; }
         main section.container-fluid#why_us article .body .row .row h3 {
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          color: #555555;
-          font-weight: bold;
           margin-bottom: 10px; }
     main section.container-fluid#why_us article:hover hr {
       border-top: 3px solid #3BAAFE; }
@@ -145,18 +143,9 @@ main section.container-fluid {
     main section.container-fluid#what_we_do .container header {
       margin-bottom: 75px; }
       main section.container-fluid#what_we_do .container header h2 {
-        font-size: 2.4rem;
-        text-transform: uppercase;
-        color: #555555;
-        font-weight: bold;
         margin-bottom: 15px;
         text-align: center; }
       main section.container-fluid#what_we_do .container header hr {
-        width: 75px;
-        margin: 0.5rem 0;
-        border-top: 3px solid #ffffff;
-        -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
         margin: auto; }
     main section.container-fluid#what_we_do .container .body.row article {
       margin-bottom: 30px; }
@@ -173,10 +162,6 @@ main section.container-fluid {
           main section.container-fluid#what_we_do .container .body.row article header .icon img {
             width: 100%; }
         main section.container-fluid#what_we_do .container .body.row article header h3 {
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          color: #555555;
-          font-weight: bold;
           display: inline-block; }
       main section.container-fluid#what_we_do .container .body.row article:hover header .icon {
         background-color: #3BAAFE; }
@@ -186,6 +171,68 @@ main section.container-fluid {
       color: #3BAAFE; }
     main section.container-fluid#what_we_do:hover .container header hr {
       border-top: 3px solid #3BAAFE; }
+  main section.container-fluid#how_we_work {
+    padding: 85px 0; }
+    main section.container-fluid#how_we_work .container .wrap {
+      background-color: #e0e0e0;
+      width: 75%;
+      padding: 45px 40px; }
+      main section.container-fluid#how_we_work .container .wrap header {
+        margin-bottom: 25px; }
+      main section.container-fluid#how_we_work .container .wrap .body ul {
+        margin: 30px 0 0;
+        padding: 0;
+        list-style-type: none; }
+        main section.container-fluid#how_we_work .container .wrap .body ul li {
+          vertical-align: middle;
+          margin: 0; }
+          main section.container-fluid#how_we_work .container .wrap .body ul li::before {
+            content: '\2713';
+            font-size: 2rem;
+            font-weight: 900;
+            width: 36px;
+            height: 36px;
+            padding: 3px 10px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #000000; }
+          main section.container-fluid#how_we_work .container .wrap .body ul li h3 {
+            height: 36px;
+            line-height: 36px; }
+          main section.container-fluid#how_we_work .container .wrap .body ul li p {
+            margin-left: 46px; }
+          main section.container-fluid#how_we_work .container .wrap .body ul li:hover::before {
+            background-color: #3BAAFE;
+            color: #ffffff; }
+          main section.container-fluid#how_we_work .container .wrap .body ul li:hover h3 {
+            color: #3BAAFE; }
+      main section.container-fluid#how_we_work .container .wrap:hover header h2 {
+        color: #3BAAFE; }
+      main section.container-fluid#how_we_work .container .wrap:hover header hr {
+        border-top: 3px solid #3BAAFE; }
+  main section.container-fluid#our_team .container header h2 {
+    color: #3BAAFE !important; }
+  main section.container-fluid#our_team .container .body.row article.member_of_team {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 20px 30px; }
+    main section.container-fluid#our_team .container .body.row article.member_of_team .img {
+      width: 155px;
+      height: 180px;
+      padding: 10px;
+      position: absolute;
+      top: -20px;
+      left: 48px; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .img img.person {
+        -o-object-fit: contain;
+        object-fit: contain;
+        background-color: #b0b0b0; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .img p {
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis; }
 
 footer.container-fluid {
   background-color: #202020;
