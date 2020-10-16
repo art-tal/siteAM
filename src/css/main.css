@@ -211,8 +211,10 @@ main section.container-fluid {
         color: #3BAAFE; }
       main section.container-fluid#how_we_work .container .wrap:hover header hr {
         border-top: 3px solid #3BAAFE; }
-  main section.container-fluid#our_team .container header h2 {
-    color: #3BAAFE !important; }
+  main section.container-fluid#our_team .container header {
+    margin-bottom: 115px; }
+    main section.container-fluid#our_team .container header h2 {
+      color: #3BAAFE !important; }
   main section.container-fluid#our_team .container .body.row article.member_of_team {
     position: relative;
     background-color: #e0e0e0;
@@ -220,19 +222,81 @@ main section.container-fluid {
     main section.container-fluid#our_team .container .body.row article.member_of_team .img {
       width: 155px;
       height: 180px;
-      padding: 10px;
       position: absolute;
-      top: -20px;
-      left: 48px; }
+      top: -30px;
+      left: 25px;
+      z-index: 5;
+      border: 10px solid #a0a0a0; }
       main section.container-fluid#our_team .container .body.row article.member_of_team .img img.person {
-        -o-object-fit: contain;
-        object-fit: contain;
+        width: 100%;
+        height: 100%;
         background-color: #b0b0b0; }
       main section.container-fluid#our_team .container .body.row article.member_of_team .img p {
         overflow: hidden;
         white-space: nowrap;
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis; }
+    main section.container-fluid#our_team .container .body.row article.member_of_team .social {
+      width: 155px;
+      height: 155px;
+      position: absolute;
+      top: 155px;
+      margin-top: 5px; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .social a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 10px 15px;
+        margin-left: 5px;
+        -webkit-box-shadow: 2px 2px #a0a0a0;
+        box-shadow: 2px 2px #a0a0a0; }
+        main section.container-fluid#our_team .container .body.row article.member_of_team .social a img {
+          height: 100%; }
+        main section.container-fluid#our_team .container .body.row article.member_of_team .social a#twitter-link {
+          padding: 10px; }
+        main section.container-fluid#our_team .container .body.row article.member_of_team .social a#google-plus-link {
+          padding: 10px 12px; }
+    main section.container-fluid#our_team .container .body.row article.member_of_team .card_info {
+      padding-left: 150px; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .card_info .name {
+        background-color: #fff;
+        display: inline-block;
+        width: auto;
+        padding: 5px 25px 10px;
+        -webkit-transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+        transform: skewX(-15deg);
+        position: relative;
+        left: -15px; }
+        main section.container-fluid#our_team .container .body.row article.member_of_team .card_info .name h3 {
+          color: #3BAAFE;
+          -webkit-transform: skewX(15deg);
+          -ms-transform: skewX(15deg);
+          transform: skewX(15deg);
+          font-weight: bold; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .card_info .profession {
+        display: inline-block;
+        padding: 5px 25px;
+        background-color: #a0a0a0;
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        width: auto;
+        position: relative;
+        left: -15px;
+        top: -10px;
+        z-index: 3; }
+        main section.container-fluid#our_team .container .body.row article.member_of_team .card_info .profession h4 {
+          display: inline-block;
+          width: auto;
+          -webkit-transform: skewX(20deg);
+          -ms-transform: skewX(20deg);
+          transform: skewX(20deg);
+          color: #606060; }
+      main section.container-fluid#our_team .container .body.row article.member_of_team .card_info p {
+        margin-left: 12px; }
 
 footer.container-fluid {
   background-color: #202020;
