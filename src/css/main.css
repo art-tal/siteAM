@@ -17,6 +17,9 @@ h3 {
   color: #555555;
   font-weight: bold; }
 
+button {
+  margin: 10px; }
+
 * {
   font-size: 10px; }
 
@@ -218,7 +221,8 @@ main section.container-fluid {
   main section.container-fluid#our_team .container .body.row article.member_of_team {
     position: relative;
     background-color: #e0e0e0;
-    padding: 20px 30px; }
+    padding: 20px 30px;
+    margin: 30px 10px; }
     main section.container-fluid#our_team .container .body.row article.member_of_team .img {
       width: 155px;
       height: 180px;
@@ -254,9 +258,9 @@ main section.container-fluid {
         box-shadow: 2px 2px #a0a0a0; }
         main section.container-fluid#our_team .container .body.row article.member_of_team .social a img {
           height: 100%; }
-        main section.container-fluid#our_team .container .body.row article.member_of_team .social a#twitter-link {
+        main section.container-fluid#our_team .container .body.row article.member_of_team .social a.twitter-link {
           padding: 10px; }
-        main section.container-fluid#our_team .container .body.row article.member_of_team .social a#google-plus-link {
+        main section.container-fluid#our_team .container .body.row article.member_of_team .social a.google-plus-link {
           padding: 10px 12px; }
     main section.container-fluid#our_team .container .body.row article.member_of_team .card_info {
       padding-left: 150px; }
@@ -294,9 +298,70 @@ main section.container-fluid {
           -webkit-transform: skewX(20deg);
           -ms-transform: skewX(20deg);
           transform: skewX(20deg);
-          color: #606060; }
+          color: #606060;
+          text-transform: uppercase;
+          font-weight: 700; }
       main section.container-fluid#our_team .container .body.row article.member_of_team .card_info p {
         margin-left: 12px; }
+  main section.container-fluid#quality {
+    padding: 60px 0;
+    background: -webkit-linear-gradient(155deg, #eeeeee 50%, #fafafa 50%);
+    background: -o-linear-gradient(155deg, #eeeeee 50%, #fafafa 50%);
+    background: linear-gradient(-65deg, #eeeeee 50%, #fafafa 50%); }
+    main section.container-fluid#quality .container.row {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      main section.container-fluid#quality .container.row .img img.devices {
+        width: 100%; }
+      main section.container-fluid#quality .container.row header {
+        margin-bottom: 20px; }
+        main section.container-fluid#quality .container.row header h2 {
+          color: #ffffff;
+          text-shadow: 1px 1px #cccccc; }
+      main section.container-fluid#quality .container.row .body ul {
+        margin-left: 0;
+        margin-top: 20px;
+        padding-left: 50px;
+        list-style-type: none; }
+        main section.container-fluid#quality .container.row .body ul li {
+          display: inline-block;
+          position: relative;
+          margin-bottom: 25px; }
+          main section.container-fluid#quality .container.row .body ul li::before {
+            content: url(../img/icon/duble-arrow.png);
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: -50px; }
+          main section.container-fluid#quality .container.row .body ul li:hover::before {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out; }
+    main section.container-fluid#quality:hover .container.row header {
+      margin-bottom: 20px; }
+      main section.container-fluid#quality:hover .container.row header h2 {
+        color: #3BAAFE; }
+      main section.container-fluid#quality:hover .container.row header hr {
+        border-top: 3px solid #3BAAFE; }
+    main section.container-fluid#quality:hover .container.row .body ul {
+      margin-left: 0;
+      margin-top: 20px;
+      padding-left: 50px;
+      list-style-type: none; }
+      main section.container-fluid#quality:hover .container.row .body ul li {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 25px; }
+      main section.container-fluid#quality:hover .container.row .body ul li::before {
+        content: url(../img/icon/duble-arrow.png);
+        display: inline-block;
+        position: absolute;
+        left: -50px; }
 
 footer.container-fluid {
   background-color: #202020;

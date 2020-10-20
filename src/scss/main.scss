@@ -41,6 +41,10 @@ h3 {
   font-weight: bold;
 }
 
+button {
+  margin: 10px;
+}
+
 * {
   font-size: 10px;
 }
@@ -384,6 +388,7 @@ main {
             position: relative;
             background-color: #e0e0e0;
             padding: 20px 30px;
+            margin: 30px 10px;
             .img {
               width: 155px;
               height: 180px;
@@ -424,10 +429,10 @@ main {
                 img {
                   height: 100%;
                 }
-                &#twitter-link {
+                &.twitter-link {
                   padding: 10px;
                 }
-                &#google-plus-link {
+                &.google-plus-link {
                   padding: 10px 12px;
                 }
               }
@@ -446,6 +451,7 @@ main {
                   color: $active_color;
                   transform: skewX(15deg);
                   font-weight: bold;
+
                 }
               }
               .profession {
@@ -463,10 +469,92 @@ main {
                   width: auto;
                   transform: skewX(20deg);
                   color: #606060;
+                  text-transform: uppercase;
+                  font-weight: 700;
                 }
               }
               p {
                 margin-left: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#quality {
+      padding: 60px 0;
+      background: linear-gradient(-65deg, #eeeeee 50%, #fafafa 50%);
+      .container.row {
+        justify-content: space-between;
+        .img {
+          img.devices {
+            width: 100%;
+          }
+        }
+        header {
+          margin-bottom: 20px;
+          h2 {
+            color: #ffffff;
+            text-shadow: 1px 1px #cccccc;
+          }
+        }
+        .body {
+          ul {
+            margin-left: 0;
+            margin-top: 20px;
+            padding-left: 50px;
+            list-style-type: none;
+            li {
+              display: inline-block;
+              position: relative;
+              margin-bottom: 25px;
+              &::before {
+                content: url(../img/icon/duble-arrow.png);
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left: -50px;
+              }
+
+              &:hover {
+                &::before {
+                  transform: rotate(360deg);
+                  transition: 0.5s ease-out;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .container.row {
+          header {
+            margin-bottom: 20px;
+            h2 {
+              color: $active_color;
+            }
+            hr {
+              @include hr-hover;
+            }
+          }
+          .body {
+            ul {
+              margin-left: 0;
+              margin-top: 20px;
+              padding-left: 50px;
+              list-style-type: none;
+              li {
+                display: inline-block;
+                position: relative;
+                margin-bottom: 25px;
+              }
+              li::before {
+                content: url(../img/icon/duble-arrow.png);
+                display: inline-block;
+                position: absolute;
+                left: -50px;
               }
             }
           }
