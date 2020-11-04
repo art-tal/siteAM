@@ -21,6 +21,9 @@ h3 {
 button {
   margin: 10px; }
 
+a:hover {
+  color: #3BAAFE; }
+
 * {
   font-size: 10px; }
 
@@ -111,8 +114,6 @@ main section.container-fluid {
         text-align: center; }
         main section.container-fluid .container.row article .icon img {
           height: 28px; }
-      main section.container-fluid .container.row article:hover header hr {
-        border-top: 3px solid #3BAAFE; }
       main section.container-fluid .container.row article:hover .icon {
         background-color: #3BAAFE; }
   main section.container-fluid#why_us article {
@@ -368,8 +369,10 @@ main section.container-fluid {
     padding: 85px 0; }
     main section.container-fluid#portfolio header {
       width: auto;
-      margin: 0 auto 50px; }
+      margin: 0 auto 50px;
+      text-align: center; }
       main section.container-fluid#portfolio header h2 {
+        margin: auto;
         display: inline-block;
         width: auto; }
       main section.container-fluid#portfolio header hr {
@@ -413,13 +416,188 @@ main section.container-fluid {
         border: 1px solid #3BAAFE; }
       main section.container-fluid#portfolio .body.container.row div:hover span {
         display: block; }
-  main section.container-fluid#best_work article {
-    padding: 40px 130px 35px 40px;
-    background-color: #313030; }
-    main section.container-fluid#best_work article header h2 {
-      color: #ffffff; }
-    main section.container-fluid#best_work article header hr {
-      border-top: 1px solid #ffffff; }
+    main section.container-fluid#portfolio:hover header h2 {
+      color: #3BAAFE; }
+    main section.container-fluid#portfolio:hover header hr {
+      border-top: 3px solid #3BAAFE; }
+  main section.container-fluid#best_work {
+    padding-bottom: 0;
+    margin: 0; }
+    main section.container-fluid#best_work article {
+      padding: 40px 130px 35px 40px;
+      background-color: #313030; }
+      main section.container-fluid#best_work article header h2 {
+        color: #ffffff;
+        text-shadow: none; }
+      main section.container-fluid#best_work article header hr {
+        border-top: 1px solid #ffffff; }
+      main section.container-fluid#best_work article:hover header h2 {
+        color: #3BAAFE; }
+      main section.container-fluid#best_work article:hover header hr {
+        border-top: 3px solid #3BAAFE; }
+      main section.container-fluid#best_work article .body .row {
+        margin-top: 45px; }
+        main section.container-fluid#best_work article .body .row div {
+          margin-bottom: 25px; }
+          main section.container-fluid#best_work article .body .row div h3 img {
+            display: inline-block;
+            height: 2rem;
+            margin-right: 10px; }
+          main section.container-fluid#best_work article .body .row div h3 span {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: #ffffff; }
+  main section.container-fluid#blog {
+    padding: 85px 0 0;
+    background-color: #f6f6f6; }
+    main section.container-fluid#blog header {
+      margin-bottom: 85px; }
+    main section.container-fluid#blog:hover header h2 {
+      color: #3BAAFE; }
+    main section.container-fluid#blog:hover header hr {
+      border-top: 3px solid #3BAAFE; }
+    main section.container-fluid#blog .body.container .carousel .row {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      margin-bottom: 15px; }
+      main section.container-fluid#blog .body.container .carousel .row div {
+        padding: 3px; }
+        main section.container-fluid#blog .body.container .carousel .row div article.card {
+          width: 100%; }
+          main section.container-fluid#blog .body.container .carousel .row div article.card img.card-img-top {
+            width: 100%;
+            min-height: 150px;
+            background-color: #7a7878; }
+          main section.container-fluid#blog .body.container .carousel .row div article.card .card-body {
+            margin: 8px; }
+            main section.container-fluid#blog .body.container .carousel .row div article.card .card-body h4 {
+              text-transform: uppercase;
+              color: #7a7878;
+              font-size: 1.4rem;
+              font-weight: bold; }
+            main section.container-fluid#blog .body.container .carousel .row div article.card .card-body span {
+              color: #7a7878;
+              text-transform: uppercase;
+              font-size: 1.2rem;
+              font-weight: bold; }
+            main section.container-fluid#blog .body.container .carousel .row div article.card .card-body a.btn.btn-link {
+              font-size: 1.2rem;
+              text-transform: uppercase;
+              color: #7a7878;
+              font-weight: bold; }
+              main section.container-fluid#blog .body.container .carousel .row div article.card .card-body a.btn.btn-link:hover {
+                color: #3BAAFE;
+                text-decoration: none; }
+    main section.container-fluid#blog .body.container .btn.btn-secondary {
+      padding: 0 0 10px;
+      background-color: #7a7878;
+      font-size: 1.8rem;
+      font-weight: bold;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center; }
+      main section.container-fluid#blog .body.container .btn.btn-secondary.next {
+        padding-left: 3px; }
+      main section.container-fluid#blog .body.container .btn.btn-secondary:hover {
+        color: #3BAAFE; }
+    main section.container-fluid#blog .body.container .show-blog.row {
+      margin-top: 120px; }
+      main section.container-fluid#blog .body.container .show-blog.row div {
+        padding: 15px 15px 0; }
+        main section.container-fluid#blog .body.container .show-blog.row div.quote {
+          padding-bottom: 30px; }
+        main section.container-fluid#blog .body.container .show-blog.row div img[alt="quote"] {
+          display: block;
+          width: 64px;
+          margin-bottom: 20px; }
+        main section.container-fluid#blog .body.container .show-blog.row div blockquote {
+          width: 100%;
+          margin-bottom: 40px; }
+          main section.container-fluid#blog .body.container .show-blog.row div blockquote p {
+            background-color: #fff;
+            padding: 20px 30px 50px; }
+          main section.container-fluid#blog .body.container .show-blog.row div blockquote cite {
+            text-align: right;
+            color: #7a7878;
+            font-style: normal;
+            margin-bottom: 40px; }
+            main section.container-fluid#blog .body.container .show-blog.row div blockquote cite h3 {
+              margin-top: 30px;
+              margin-bottom: 10px;
+              font-weight: bold;
+              font-size: 1.4rem; }
+            main section.container-fluid#blog .body.container .show-blog.row div blockquote cite h5 {
+              margin-bottom: 10px;
+              font-size: 1.2rem; }
+            main section.container-fluid#blog .body.container .show-blog.row div blockquote cite h4 {
+              font-weight: bold;
+              text-transform: uppercase;
+              font-size: 1.2rem; }
+        main section.container-fluid#blog .body.container .show-blog.row div.photo img {
+          width: 100%;
+          height: 100%;
+          background-color: #7a7878; }
+        main section.container-fluid#blog .body.container .show-blog.row div.icons .image {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background-color: #7a7878; }
+  main section.container-fluid#pricing {
+    padding: 85px 0; }
+    main section.container-fluid#pricing header {
+      margin-bottom: 50px;
+      text-align: center; }
+      main section.container-fluid#pricing header hr {
+        margin: auto; }
+    main section.container-fluid#pricing:hover header h2 {
+      color: #3BAAFE; }
+    main section.container-fluid#pricing:hover header hr {
+      border-top: 3px solid #3BAAFE; }
+    main section.container-fluid#pricing .body.container .row div {
+      padding: 15px; }
+      main section.container-fluid#pricing .body.container .row div article.price {
+        width: 100%; }
+        main section.container-fluid#pricing .body.container .row div article.price header {
+          background-color: #f6f6f6;
+          margin: 0;
+          padding: 10px;
+          text-transform: uppercase; }
+          main section.container-fluid#pricing .body.container .row div article.price header h3 {
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px 2px #7a7878;
+            font-weight: bold; }
+        main section.container-fluid#pricing .body.container .row div article.price .body {
+          padding: 0; }
+          main section.container-fluid#pricing .body.container .row div article.price .body h5 {
+            background-color: #fafafa;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: #999999;
+            margin: 0;
+            text-align: center;
+            padding: 7px; }
+            main section.container-fluid#pricing .body.container .row div article.price .body h5 srong {
+              font-size: 3rem;
+              font-weight: bold; }
+            main section.container-fluid#pricing .body.container .row div article.price .body h5:nth-child(even) {
+              background-color: #f5f5f5; }
+        main section.container-fluid#pricing .body.container .row div article.price footer {
+          padding: 10px;
+          background-color: #e6e6e6; }
+          main section.container-fluid#pricing .body.container .row div article.price footer h3 {
+            color: #7a7878;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold; }
+        main section.container-fluid#pricing .body.container .row div article.price:hover header h3 {
+          color: #3BAAFE; }
+        main section.container-fluid#pricing .body.container .row div article.price:hover footer {
+          background-color: #3BAAFE; }
+          main section.container-fluid#pricing .body.container .row div article.price:hover footer h3 {
+            color: #ffffff; }
 
 footer.container-fluid {
   background-color: #202020;
