@@ -598,6 +598,69 @@ main section.container-fluid {
           background-color: #3BAAFE; }
           main section.container-fluid#pricing .body.container .row div article.price:hover footer h3 {
             color: #ffffff; }
+      main section.container-fluid#pricing .body.container .row div:nth-child(2) article.price header {
+        background-color: #AA9C9B; }
+      main section.container-fluid#pricing .body.container .row div:nth-child(3) article.price header {
+        background-color: #847A82; }
+      main section.container-fluid#pricing .body.container .row div:nth-child(4) article.price header {
+        background-color: #5D5766; }
+  main section.container-fluid#facts {
+    padding: 40px 0 85px;
+    background-color: #181727; }
+    main section.container-fluid#facts header {
+      margin-bottom: 100px; }
+      main section.container-fluid#facts header h2 {
+        color: #ffffff;
+        text-shadow: none; }
+    main section.container-fluid#facts .body {
+      width: 60%;
+      margin: auto; }
+      main section.container-fluid#facts .body .row div .image {
+        -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+        width: auto;
+        height: 40px;
+        padding: 5px 0 5px;
+        border-right: 2px solid #ffffff; }
+        main section.container-fluid#facts .body .row div .image img {
+          display: block;
+          width: auto;
+          padding-right: 20px;
+          height: 100%;
+          vertical-align: middle; }
+      main section.container-fluid#facts .body .row div .fact {
+        margin-left: 10px; }
+        main section.container-fluid#facts .body .row div .fact h2 {
+          font-size: 2.4rem;
+          color: #ffffff;
+          font-weight: bold;
+          text-shadow: none;
+          text-transform: uppercase;
+          margin-bottom: 10px; }
+        main section.container-fluid#facts .body .row div .fact h4 {
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          color: #ffffff;
+          line-height: 2rem; }
+  main section.container-fluid#partners {
+    background-color: #fff;
+    padding: 75px 0; }
+    main section.container-fluid#partners header {
+      margin-bottom: 50px; }
+      main section.container-fluid#partners header hr {
+        margin: auto; }
+    main section.container-fluid#partners:hover header h2 {
+      color: #3BAAFE; }
+    main section.container-fluid#partners:hover header hr {
+      border-top: 3px solid #3BAAFE; }
+    main section.container-fluid#partners .body.container .row div {
+      padding: 0 15px; }
+      main section.container-fluid#partners .body.container .row div img {
+        display: block;
+        background-color: #7a7878;
+        width: 100%;
+        min-height: 100px; }
 
 footer.container-fluid {
   background-color: #202020;
