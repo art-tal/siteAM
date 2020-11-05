@@ -1,6 +1,6 @@
 hr {
   width: 75px;
-  margin: 0.5rem 0;
+  margin: 5px 0;
   border-top: 3px solid #ffffff;
   -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1); }
@@ -142,7 +142,7 @@ main section.container-fluid {
         main section.container-fluid#why_us article .body .row .row h3 {
           margin-bottom: 10px; }
     main section.container-fluid#why_us article:hover hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
   main section.container-fluid#what_we_do {
     padding: 75px 0; }
     main section.container-fluid#what_we_do .container header {
@@ -163,9 +163,14 @@ main section.container-fluid {
           height: 45px;
           border-radius: 50%;
           margin-right: 15px;
-          padding: 12px; }
+          padding: 12px;
+          text-align: center; }
           main section.container-fluid#what_we_do .container .body.row article header .icon img {
-            width: 100%; }
+            width: 100%;
+            height: auto; }
+            main section.container-fluid#what_we_do .container .body.row article header .icon img[alt="dollar"] {
+              width: auto;
+              height: 100%; }
         main section.container-fluid#what_we_do .container .body.row article header h3 {
           display: inline-block; }
       main section.container-fluid#what_we_do .container .body.row article:hover header .icon {
@@ -175,7 +180,7 @@ main section.container-fluid {
     main section.container-fluid#what_we_do:hover .container header h2 {
       color: #3BAAFE; }
     main section.container-fluid#what_we_do:hover .container header hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
   main section.container-fluid#how_we_work {
     padding: 85px 0; }
     main section.container-fluid#how_we_work .container .wrap {
@@ -215,7 +220,7 @@ main section.container-fluid {
       main section.container-fluid#how_we_work .container .wrap:hover header h2 {
         color: #3BAAFE; }
       main section.container-fluid#how_we_work .container .wrap:hover header hr {
-        border-top: 3px solid #3BAAFE; }
+        border-color: #3BAAFE; }
   main section.container-fluid#our_team .container header {
     margin-bottom: 115px; }
     main section.container-fluid#our_team .container header h2 {
@@ -349,7 +354,7 @@ main section.container-fluid {
       main section.container-fluid#quality:hover .container.row header h2 {
         color: #3BAAFE; }
       main section.container-fluid#quality:hover .container.row header hr {
-        border-top: 3px solid #3BAAFE; }
+        border-color: #3BAAFE; }
     main section.container-fluid#quality:hover .container.row .body ul {
       margin-left: 0;
       margin-top: 20px;
@@ -419,7 +424,7 @@ main section.container-fluid {
     main section.container-fluid#portfolio:hover header h2 {
       color: #3BAAFE; }
     main section.container-fluid#portfolio:hover header hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
   main section.container-fluid#best_work {
     padding-bottom: 0;
     margin: 0; }
@@ -434,7 +439,7 @@ main section.container-fluid {
       main section.container-fluid#best_work article:hover header h2 {
         color: #3BAAFE; }
       main section.container-fluid#best_work article:hover header hr {
-        border-top: 3px solid #3BAAFE; }
+        border-color: #3BAAFE; }
       main section.container-fluid#best_work article .body .row {
         margin-top: 45px; }
         main section.container-fluid#best_work article .body .row div {
@@ -455,7 +460,7 @@ main section.container-fluid {
     main section.container-fluid#blog:hover header h2 {
       color: #3BAAFE; }
     main section.container-fluid#blog:hover header hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
     main section.container-fluid#blog .body.container .carousel .row {
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -554,7 +559,7 @@ main section.container-fluid {
     main section.container-fluid#pricing:hover header h2 {
       color: #3BAAFE; }
     main section.container-fluid#pricing:hover header hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
     main section.container-fluid#pricing .body.container .row div {
       padding: 15px; }
       main section.container-fluid#pricing .body.container .row div article.price {
