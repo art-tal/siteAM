@@ -890,6 +890,117 @@ main {
                 }
               }
             }
+            
+            &:nth-child(2) {
+              article.price {
+                header {
+                  background-color: #AA9C9B;
+                }
+              }
+            }
+            &:nth-child(3) {
+              article.price {
+                header {
+                  background-color: #847A82;
+                }
+              }
+            }
+            &:nth-child(4) {
+              article.price {
+                header {
+                  background-color: #5D5766;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#facts {
+      padding: 40px 0 85px;
+      background-color: #181727;
+      header {
+        margin-bottom: 100px;
+        h2 {
+          color: #ffffff;
+          text-shadow: none;
+        }
+      }
+
+      .body {
+        width: 60%;
+        margin: auto;
+        .row {
+          div {
+            .image {
+              align-self: start;
+              width: auto;
+              height: 40px;
+              padding: 5px 0 5px;
+              border-right: 2px solid #ffffff;
+              img {
+                display: block;
+                width: auto;
+                padding-right: 20px;
+                height: 100%;
+                vertical-align: middle;
+                //height: auto;
+              }
+            }
+
+            .fact {
+              margin-left: 10px;
+              h2 {
+                font-size: 2.4rem;
+                color: #ffffff;
+                font-weight: bold;
+                text-shadow: none;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+              }
+              h4 {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: #ffffff;
+                line-height: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#partners {
+      background-color: #fff;
+      padding: 75px 0;
+      header {
+        margin-bottom: 50px;
+        hr {
+          margin: auto;
+        }
+      }
+      &:hover {
+        header {
+          h2 {
+            color: $active_color;
+          }
+          hr {
+            @include hr-hover;
+          }
+        }
+      }
+
+      .body.container {
+        .row {
+          div {
+            padding: 0 15px;
+            img {
+              display: block;
+              background-color: #7a7878;
+              width: 100%;
+              min-height: 100px;
+            }
           }
         }
       }
