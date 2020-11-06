@@ -206,6 +206,9 @@ main {
           }
         }
         &:hover {
+          h2 {
+            color: $active_color;
+          }
           hr {
             @include hr-hover;
           }

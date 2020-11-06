@@ -141,6 +141,8 @@ main section.container-fluid {
             width: 100%; }
         main section.container-fluid#why_us article .body .row .row h3 {
           margin-bottom: 10px; }
+    main section.container-fluid#why_us article:hover h2 {
+      color: #3BAAFE; }
     main section.container-fluid#why_us article:hover hr {
       border-color: #3BAAFE; }
   main section.container-fluid#what_we_do {
@@ -658,7 +660,7 @@ main section.container-fluid {
     main section.container-fluid#partners:hover header h2 {
       color: #3BAAFE; }
     main section.container-fluid#partners:hover header hr {
-      border-top: 3px solid #3BAAFE; }
+      border-color: #3BAAFE; }
     main section.container-fluid#partners .body.container .row div {
       padding: 0 15px; }
       main section.container-fluid#partners .body.container .row div img {
