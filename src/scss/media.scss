@@ -1,3 +1,5 @@
+@import "main.scss";
+
 @media (min-width: 992px) and (max-width: 1199.9px) {
   header.container-fluid {
     h1 {
@@ -14,43 +16,15 @@
       &#why_us {
         article {
           padding: 60px 40px;
-          header {
-            margin-bottom: 40px;
-            h2 {
-              font-size: 2.4rem;
-              color: #ffffff;
-              text-transform: uppercase;
-              text-shadow: 1px 1px rgba(0,0,0,.1);
-            }
-          }
           .body {
             .row {
-              margin: 45px 0 0;
-
               .row {
-                margin: 0 0 30px;
+                margin: 0 -15px 30px;
                 &:nth-child(odd) {
                   margin-left: -15px;
-                  margin-right: 15px;
-                }
-                .icon {
-                  background-color: #fff;
-                  width: 100%;
-                  height: auto;
-                  padding: 15px;
-                  img {
-                    width: 100%;
-                  }
-                }
-                h3 {
-                  margin-bottom: 10px;
+                  margin-right: -15px;
                 }
               }
-            }
-          }
-          &:hover {
-            hr {
-              @include hr-hover;
             }
           }
         }
@@ -59,137 +33,11 @@
       &#what_we_do {
         padding: 75px 0;
         .container {
-          header {
-            margin-bottom: 75px;
-            h2 {
-              margin-bottom: 15px;
-              text-align: center;
-            }
-            hr {
-              margin: auto;
-            }
-          }
-
           .body.row {
             article {
-              margin-bottom: 30px;
               header {
-                margin-bottom: 10px;
-                .icon {
-                  display: inline-block;
-                  background-color: #555555;
-                  width: 45px;
-                  height: 45px;
-                  border-radius: 50%;
-                  margin-right: 15px;
-                  padding: 12px;
-                  text-align: center;
-                  img {
-                    width: 100%;
-                    height: auto;
-                    &[alt="dollar"] {
-                      width: auto;
-                      height: 100%;
-                    }
-                  }
-
-                }
-                h3 {
-                  //@include h3;
-                  display: inline-block;
-                }
-              }
-
-              &:hover {
-                header {
-                  .icon {
-                    background-color: $active_color;
-                  }
-                  h3 {
-                    color: #000000;
-                  }
-
-                }
-              }
-            }
-          }
-        }
-        &:hover {
-          .container {
-            header {
-              h2 {
-                color: $active_color;
-              }
-              hr {
-                @include hr-hover;
-              }
-            }
-          }
-
-        }
-      }
-
-      &#how_we_work {
-        padding: 85px 0;
-        .container {
-          .wrap {
-            background-color: #e0e0e0;
-            width: 75%;
-            padding: 45px 40px;
-            header {
-              margin-bottom: 25px;
-            }
-            .body {
-              ul {
-                margin: 30px 0 0;
-                padding: 0;
-                list-style-type: none;
-
-                li {
-                  vertical-align: middle;
-                  margin: 0;
-                  &::before {
-                    content: '\2713';
-                    font-size: 2rem;
-                    font-weight: 900;
-                    width: 36px;
-                    height: 36px;
-                    padding: 3px 10px;
-                    margin-right: 10px;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    color: #000000;
-                  }
-                  h3 {
-                    //@include h3;
-                    height: 36px;
-                    line-height: 36px;
-                  }
-                  p {
-                    margin-left: 46px;
-                  }
-
-                  &:hover {
-                    &::before {
-                      background-color: $active_color;
-                      color: #ffffff;
-                    }
-                    h3 {
-                      color: $active_color;
-                    }
-                  }
-                }
-              }
-            }
-
-            &:hover {
-              header {
-                h2 {
-                  color: $active_color;
-                }
-                hr {
-                  @include hr-hover;
-                }
+                display: flex;
+                align-items: center;
               }
             }
           }
@@ -199,656 +47,26 @@
       &#our_team {
         .container {
           header {
-            margin-bottom: 115px;
-            h2 {
-              color: $active_color !important;
-            }
-          }
-          .body.row {
-            article.member_of_team {
-              position: relative;
-              background-color: #e0e0e0;
-              padding: 20px 30px;
-              margin: 30px 10px;
-              .img {
-                width: 155px;
-                height: 180px;
-                position: absolute;
-                top: -30px;
-                left: 25px;
-                z-index: 5;
-                border: 10px solid #a0a0a0;
-                img.person {
-                  width: 100%;
-                  height: 100%;
-                  background-color: #b0b0b0;
-                }
-
-                p {
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                }
-              }
-              .social {
-                width: 155px;
-                height: 155px;
-                position: absolute;
-                top: 155px;
-                margin-top: 5px;
-                a {
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  background-color: #fff;
-                  padding: 10px 15px;
-                  margin-left: 5px;
-                  box-shadow: 2px 2px #a0a0a0;
-                  img {
-                    height: 100%;
-                  }
-                  &.twitter-link {
-                    padding: 10px;
-                  }
-                  &.google-plus-link {
-                    padding: 10px 12px;
-                  }
-                }
-              }
-              .card_info {
-                padding-left: 150px;
-                .name {
-                  background-color: #fff;
-                  display: inline-block;
-                  width: auto;
-                  padding: 5px 25px 10px;
-                  transform: skewX(-15deg);
-                  position: relative;
-                  left: -15px;
-                  h3 {
-                    color: $active_color;
-                    transform: skewX(15deg);
-                    font-weight: bold;
-
-                  }
-                }
-                .profession {
-                  display: inline-block;
-                  padding: 5px 25px;
-                  background-color: #a0a0a0;
-                  transform: skewX(-20deg);
-                  width: auto;
-                  position: relative;
-                  left: -15px;
-                  top: -10px;
-                  z-index: 3;
-                  h4 {
-                    display: inline-block;
-                    width: auto;
-                    transform: skewX(20deg);
-                    color: #606060;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                  }
-                }
-                p {
-                  margin-left: 12px;
-                }
-              }
-            }
+            margin-bottom: 85px;
           }
         }
       }
 
       &#quality {
-        padding: 60px 0;
-        background: linear-gradient(-65deg, #eeeeee 50%, #fafafa 50%);
         .container.row {
-          justify-content: space-between;
-          .img {
-            img.devices {
-              width: 100%;
-            }
-          }
-          header {
-            margin-bottom: 20px;
-            h2 {
-              color: #ffffff;
-              text-shadow: 1px 1px #cccccc;
-            }
-          }
-          .body {
-            ul {
-              margin-left: 0;
-              margin-top: 20px;
-              padding-left: 50px;
-              list-style-type: none;
-              li {
-                display: inline-block;
-                position: relative;
-                margin-bottom: 25px;
-                &::before {
-                  content: url(../img/icon/duble-arrow.png);
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  position: absolute;
-                  left: -50px;
-                }
-
-                &:hover {
-                  &::before {
-                    transform: rotate(360deg);
-                    transition: 0.5s ease-out;
-                  }
-                }
-              }
-            }
-          }
-        }
-        &:hover {
-          .container.row {
-            header {
-              margin-bottom: 20px;
-              h2 {
-                color: $active_color;
-              }
-              hr {
-                @include hr-hover;
-              }
-            }
-            .body {
-              ul {
-                margin-left: 0;
-                margin-top: 20px;
-                padding-left: 50px;
-                list-style-type: none;
-                li {
-                  display: inline-block;
-                  position: relative;
-                  margin-bottom: 25px;
-                }
-                li::before {
-                  content: url(../img/icon/duble-arrow.png);
-                  display: inline-block;
-                  position: absolute;
-                  left: -50px;
-                }
-              }
-            }
-          }
+          align-items: center;
         }
       }
 
       &#portfolio {
-        background-color: #fff;
-        padding: 85px 0;
-        header {
-          //display: inline-block;
-          width: auto;
-          margin: 0 auto 50px;
-          text-align: center;
-          h2 {
-            margin: auto;
-            display: inline-block;
-            width: auto;
-          }
-          hr {
-            margin: auto;
-          }
-        }
-        nav {
-          margin-bottom: 50px;
-          ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            li {
-              display: block;
-              width: auto;
-              margin-right: 15px;
-              button.btn-light {
-                background-color: #f5f5f5;
-                padding: 10px 20px;
-                font-size: 1.2rem;
-                text-transform: uppercase;
-                color: #777777;
-              }
-            }
-          }
-        }
-        .body.container.row {
-          div {
-            padding: 5px;
-            a {
-              display: block;
-              box-sizing: border-box;
-              width: 100%;
-              border: 1px solid #7a7878;
-              img {
-                width: 100%;
-              }
-            }
-            span {
-              display: none;
-              top: 30%;
-              left: 15%;
-              right: 15%;
-              color: $active_color;
-              font-size: 1.8rem;
-              font-weight: bold;
-              text-align: center;
-            }
-            &:hover {
-              a {
-                border: 1px solid  $active_color;
-              }
-              span {
-                display: block;
-              }
-            }
-          }
-        }
-        &:hover {
-          header {
-            h2 {
-              color: $active_color;
-            }
-            hr {
-              @include hr-hover;
-            }
-          }
-        }
-      }
-
-      &#best_work {
-        padding-bottom: 0;
-        margin: 0;
-        article {
-          padding: 40px 130px 35px 40px;
-          background-color: #313030;
-          header {
-            h2 {
-              color: #ffffff;
-              text-shadow: none;
-            }
-            hr {
-              border-top: 1px solid #ffffff;
-            }
-          }
-          &:hover {
-            header {
-              h2 {
-                color: $active_color;
-              }
-              hr {
-                @include hr-hover;
-              }
-            }
-          }
-          .body {
-            .row {
-              margin-top: 45px;
-              div {
-                margin-bottom: 25px;
-                h3 {
-                  img {
-                    display: inline-block;
-                    height: 2rem;
-                    margin-right: 10px;
-                  }
-                  span {
-                    font-size: 1.4rem;
-                    text-transform: uppercase;
-                    color: #ffffff;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &#blog {
         padding: 85px 0 0;
-        background-color: #f6f6f6;
-        header {
-          margin-bottom: 85px;
-        }
-        &:hover {
-          header {
-            h2 {
-              color: $active_color;
-            }
-            hr {
-              @include hr-hover;
-            }
-          }
-        }
-
-        .body.container {
-          .carousel {
-            .row {
-              flex-wrap: nowrap;
-              overflow: hidden;
-              margin-bottom: 15px;
-              div {
-                padding: 3px;
-                article.card {
-                  width: 100%;
-                  img.card-img-top {
-                    width: 100%;
-                    min-height: 150px;
-                    background-color: #7a7878;
-                  }
-                  .card-body {
-                    margin: 8px;
-                    h4 {
-                      text-transform: uppercase;
-                      color: #7a7878;
-                      font-size: 1.4rem;
-                      font-weight: bold;
-                    }
-                    span {
-                      color: #7a7878;
-                      text-transform: uppercase;
-                      font-size: 1.2rem;
-                      font-weight: bold;
-                    }
-                    a.btn.btn-link {
-                      font-size: 1.2rem;
-                      text-transform: uppercase;
-                      color: #7a7878;
-                      font-weight: bold;
-                      &:hover {
-                        color: $active_color;
-                        text-decoration: none;
-
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          .btn.btn-secondary {
-            padding: 0 0 10px;
-            background-color: #7a7878;
-            font-size: 1.8rem;
-            font-weight: bold;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            text-align: center;
-            &.next {
-              padding-left: 3px;
-            }
-            &:hover {
-              color: $active_color;
-            }
-          }
-
-          .show-blog.row {
-            margin-top: 120px;
-            div {
-              padding: 15px 15px 0;
-              &.quote {
-                padding-bottom: 30px;
-              }
-              img[alt="quote"] {
-                display: block;
-                width: 64px;
-                margin-bottom: 20px;
-              }
-              blockquote {
-                width: 100%;
-                margin-bottom: 40px;
-                p {
-                  background-color: #fff;
-                  padding: 20px 30px 50px;
-                }
-                cite {
-                  text-align: right;
-                  color: #7a7878;
-                  font-style: normal;
-                  margin-bottom: 40px;
-                  h3 {
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                    font-weight: bold;
-                    font-size: 1.4rem;
-                  }
-                  h5 {
-                    margin-bottom: 10px;
-                    font-size: 1.2rem;
-                  }
-                  h4 {
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    font-size: 1.2rem;
-                  }
-                }
-              }
-              &.photo {
-                img {
-                  width: 100%;
-                  height: 100%;
-                  background-color: #7a7878;
-                }
-              }
-              &.icons {
-                .image {
-                  width: 130px;
-                  height: 130px;
-                  border-radius: 50%;
-                  background-color: #7a7878;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &#pricing {
-        padding: 85px 0;
-        header {
-          margin-bottom: 50px;
-          text-align: center;
-          h2 {}
-          hr {
-            margin: auto;
-          }
-        }
-        &:hover {
-          header {
-            h2 {
-              color: $active_color;
-            }
-            hr {
-              @include hr-hover;
-            }
-          }
-        }
-
-        .body.container {
-          .row {
-            div {
-              padding: 15px;
-              article.price {
-                width: 100%;
-                header {
-                  background-color: #f6f6f6;
-                  margin: 0;
-                  padding: 10px;
-                  text-transform: uppercase;
-                  h3 {
-                    text-transform: uppercase;
-                    color: #ffffff;
-                    text-shadow: 1px 1px 2px 2px #7a7878;
-                    font-weight: bold;
-                  }
-                }
-                .body {
-                  padding: 0;
-                  h5 {
-                    background-color: #fafafa;
-                    font-size: 1.4rem;
-                    text-transform: uppercase;
-                    color: #999999;
-                    margin: 0;
-                    text-align: center;
-                    padding: 7px;
-                    srong {
-                      font-size: 3rem;
-                      font-weight: bold;
-                    }
-                    &:nth-child(even) {
-                      background-color: #f5f5f5;
-                    }
-                  }
-                }
-                footer {
-                  padding: 10px;
-                  background-color: #e6e6e6;
-                  h3 {
-                    color: #7a7878;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                  }
-                }
-                &:hover {
-                  header {
-                    h3 {
-                      color: $active_color;
-                    }
-                  }
-                  footer {
-                    background-color: $active_color;
-                    h3 {
-                      color: #ffffff;
-                    }
-                  }
-                }
-              }
-
-              &:nth-child(2) {
-                article.price {
-                  header {
-                    background-color: #AA9C9B;
-                  }
-                }
-              }
-              &:nth-child(3) {
-                article.price {
-                  header {
-                    background-color: #847A82;
-                  }
-                }
-              }
-              &:nth-child(4) {
-                article.price {
-                  header {
-                    background-color: #5D5766;
-                  }
-                }
-              }
-            }
-          }
-        }
       }
 
       &#facts {
-        padding: 40px 0 85px;
-        background-color: #181727;
-        header {
-          margin-bottom: 100px;
-          h2 {
-            color: #ffffff;
-            text-shadow: none;
-          }
-        }
-
         .body {
-          width: 60%;
-          margin: auto;
-          .row {
-            div {
-              .image {
-                align-self: start;
-                width: auto;
-                height: 40px;
-                padding: 5px 0 5px;
-                border-right: 2px solid #ffffff;
-                img {
-                  display: block;
-                  width: auto;
-                  padding-right: 20px;
-                  height: 100%;
-                  vertical-align: middle;
-                  //height: auto;
-                }
-              }
-
-              .fact {
-                margin-left: 10px;
-                h2 {
-                  font-size: 2.4rem;
-                  color: #ffffff;
-                  font-weight: bold;
-                  text-shadow: none;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                }
-                h4 {
-                  font-size: 1.4rem;
-                  text-transform: uppercase;
-                  color: #ffffff;
-                  line-height: 2rem;
-                }
-              }
-            }
-          }
+          width: 80%;
         }
       }
-
-      &#partners {
-        background-color: #fff;
-        padding: 75px 0;
-        header {
-          margin-bottom: 50px;
-          hr {
-            margin: auto;
-          }
-        }
-        &:hover {
-          header {
-            h2 {
-              color: $active_color;
-            }
-            hr {
-              @include hr-hover;
-            }
-          }
-        }
-
-        .body.container {
-          .row {
-            div {
-              padding: 0 15px;
-              img {
-                display: block;
-                background-color: #7a7878;
-                width: 100%;
-                min-height: 100px;
-              }
-            }
-          }
-        }
-      }
-
     }
   }
 }
@@ -873,52 +91,18 @@
   }
 
   main {
-    p {
-      font-size: 1.4rem;
-      color: #999999;
-    }
-    .bg-light {
-      background-color: #f0f0f0 !important;
-    }
-
-
     section.container-fluid {
       padding: 120px 0 85px;
       background-color: #fff;
-      .container.row {
-        margin: auto;
-        article {
-          position: relative;
-          padding: 55px 30px  25px;
-          header {
-            margin-bottom: 20px;
-            width: auto;
-          }
-          .icon {
-            width: 70px;
-            height: 70px;
-            padding: 16px;
-            border: 5px solid #ffffff;
-            box-sizing: border-box;
-            border-radius: 50%;
-            background-color: #555555;
-            position: absolute;
-            top: -30px;
-            left: 26px;
-            text-align: center;
-            img {
-              //    //width: 28px;
-              height: 28px;
-            }
-          }
-          &:hover {
-            //header {
-            //  hr {
-            //    @include hr-hover;
-            //  }
-            //}
-            .icon {
-              background-color: $active_color;
+      &#about {
+        padding: 50px 0 20px;
+        .container.row {
+          div {
+            margin-bottom: 50px;
+            article {
+              .body {
+                margin-bottom: 15px;
+              }
             }
           }
         }
@@ -926,25 +110,16 @@
 
       &#why_us {
         article {
-          padding: 60px 40px;
-          header {
-            margin-bottom: 40px;
-            h2 {
-              font-size: 2.4rem;
-              color: #ffffff;
-              text-transform: uppercase;
-              text-shadow: 1px 1px rgba(0,0,0,.1);
-            }
-          }
+          padding: 50px 40px;
           .body {
             .row {
               margin: 45px 0 0;
 
               .row {
-                margin: 0 0 30px;
+                margin: 0 -15px 30px;
                 &:nth-child(odd) {
                   margin-left: -15px;
-                  margin-right: 15px;
+                  margin-right: -15px;
                 }
                 .icon {
                   background-color: #fff;
