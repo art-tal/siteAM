@@ -230,6 +230,8 @@ main {
             margin-bottom: 30px;
             header {
               margin-bottom: 10px;
+              display: flex;
+              align-items: center;
               .icon {
                 display: inline-block;
                 background-color: #555555;
@@ -356,7 +358,7 @@ main {
         header {
           margin-bottom: 115px;
           h2 {
-            color: $active_color !important;
+            color: #777777 !important;
           }
         }
         .body.row {
@@ -409,6 +411,9 @@ main {
                 &.google-plus-link {
                   padding: 10px 12px;
                 }
+                &:hover {
+                  background-color: $active_color;
+                }
               }
             }
             .card_info {
@@ -422,7 +427,7 @@ main {
                 position: relative;
                 left: -15px;
                 h3 {
-                  color: $active_color;
+                  color: #777777 !important;
                   transform: skewX(15deg);
                   font-weight: bold;
 
@@ -451,7 +456,32 @@ main {
                 margin-left: 12px;
               }
             }
+            &:hover {
+              .card_info {
+                .name {
+                  padding: 5px 25px 10px 100px;
+                  transition-property: all;
+                  transition-duration: 1s;
+                  h3 {
+                    color: $active_color !important;
+                    transition-property: all;
+                    transition-duration: 1s;
+                  }
+                }
+              }
+            }
           }
+        }
+        &:hover {
+          header {
+            h2 {
+              color: $active_color !important;
+            }
+            hr {
+              @include hr-hover;
+            }
+          }
+
         }
       }
     }
@@ -461,6 +491,7 @@ main {
       background: linear-gradient(-65deg, #eeeeee 50%, #fafafa 50%);
       .container.row {
         justify-content: space-between;
+        align-items: center;
         .img {
           img.devices {
             width: 100%;
@@ -540,7 +571,6 @@ main {
       background-color: #fff;
       padding: 85px 0;
       header {
-        //display: inline-block;
         width: auto;
         margin: 0 auto 50px;
         text-align: center;
@@ -601,6 +631,7 @@ main {
             }
             span {
               display: block;
+              cursor: pointer;
             }
           }
         }
